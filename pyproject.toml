@@ -32,7 +32,7 @@ Source = "https://github.com/Labeeb2339/sftguard"
 [project.optional-dependencies]
 dev = [
   "build>=1.2,<2",
-  "pytest>=8,<9",
+  "pytest>=8,<10",
   "ruff>=0.9,<1",
 ]
 
