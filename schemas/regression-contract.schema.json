@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sftguard:schema:regression-contract:v1",
+  "title": "SFTGuard Regression Card contract",
+  "type": "object",
+  "required": ["metrics"],
+  "properties": {
+    "bootstrap": {
+      "type": "object",
+      "properties": {
+        "draws": {"type": "integer", "minimum": 1, "maximum": 100000},
+        "confidence": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+        "seed": {"type": "integer"}
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["group", "metric", "higher_is_better"],
+        "properties": {
+          "group": {"enum": ["target", "retention"]},
+          "metric": {"type": "string", "pattern": "^[A-Za-z0-9_.-]{1,64}$"},
+          "higher_is_better": {"type": "boolean"},
+          "min_improvement": {"type": "number"},
+          "max_regression": {"type": "number", "minimum": 0}
+        }
+      }
+    }
+  }
+}

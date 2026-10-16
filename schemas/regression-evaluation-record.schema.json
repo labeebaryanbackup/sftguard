@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sftguard:schema:regression-evaluation-record:v1",
+  "title": "SFTGuard paired evaluation record",
+  "type": "object",
+  "required": ["seed", "sample_id", "group", "metric", "value"],
+  "properties": {
+    "seed": {"type": "integer"},
+    "sample_id": {"type": "string", "minLength": 1, "maxLength": 512},
+    "group": {"type": "string", "pattern": "^[A-Za-z0-9_.-]{1,64}$"},
+    "metric": {"type": "string", "pattern": "^[A-Za-z0-9_.-]{1,64}$"},
+    "value": {"type": "number"}
+  }
+}

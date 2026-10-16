@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sftguard:schema:sft-record:v1",
+  "title": "SFTGuard chat record",
+  "type": "object",
+  "required": ["messages"],
+  "properties": {
+    "messages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["role", "content"],
+        "properties": {
+          "role": {"enum": ["system", "user", "assistant", "tool"]},
+          "content": {"type": "string"}
+        }
+      }
+    },
+    "_sftguard": {
+      "type": "object",
+      "required": [
+        "token_ids",
+        "token_roles",
+        "loss_mask",
+        "eos_token_id",
+        "original_assistant_tokens"
+      ],
+      "properties": {
+        "token_ids": {"type": "array", "items": {"type": "integer"}},
+        "token_roles": {
+          "type": "array",
+          "items": {"enum": ["system", "user", "assistant", "tool"]}
+        },
+        "loss_mask": {"type": "array", "items": {"type": "boolean"}},
+        "eos_token_id": {"type": "integer"},
+        "original_assistant_tokens": {"type": "integer", "minimum": 0},
+        "truncated": {"type": "boolean", "default": false}
+      }
+    }
+  }
+}

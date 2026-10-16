@@ -1,0 +1,12 @@
+{
+  "artifact_file_sha256": "961b2842d7791f6f3af7bec5bce6105e433b68d41bf6f7b82a9f3a98e1f695ab",
+  "artifact_integrity_sha256": "eb55eaa16a492881ff1bcec8812b2ef37bb2ed6055b6b90a1da408386f632e3a",
+  "artifact_path": "evidence/v0.1.0-confirmatory.json",
+  "implementation_git_commit": "b0f168ab4d6a959d4e28611e345a250c14ca2ea9",
+  "integrity": {
+    "algorithm": "sha256",
+    "canonical_payload_sha256": "39badf5b3dc862852b890b347f6015127ee33bfb295bd1d6a022cfd028bd2131"
+  },
+  "protocol_git_commit": "d4c74cefca6729124142635dc8893b5e3ddec2d3",
+  "schema_version": "sftguard.confirmatory-manifest.v1"
+}

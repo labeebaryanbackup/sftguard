@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: >-
+  If SFTGuard supports your work, cite the software and the exact released
+  version or commit used.
+title: SFTGuard
+type: software
+authors:
+  - given-names: Muhammad Labeeb Aryan
+    name-particle: bin
+    family-names: Mohd Lokman
+repository-code: https://github.com/Labeeb2339/sftguard
+url: https://github.com/Labeeb2339/sftguard
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-07-19
+abstract: >-
+  SFTGuard is a local-first correctness and regression gate for supervised
+  fine-tuning pipelines. It audits bounded pipeline evidence and emits
+  reproducible PASS, FAIL, or ABSTAIN artifacts without claiming to train,
+  predict, or certify a model.
+keywords:
+  - supervised fine-tuning
+  - regression testing
+  - dataset auditing
+  - reproducibility

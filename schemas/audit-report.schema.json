@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sftguard:schema:audit-report:v1",
+  "title": "SFTGuard audit report",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "tool",
+    "status",
+    "inputs",
+    "checks",
+    "summary",
+    "findings",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {"const": "sftguard.audit.v1"},
+    "status": {"enum": ["PASS", "FAIL", "ABSTAIN"]},
+    "inputs": {"type": "array"},
+    "checks": {"type": "object"},
+    "summary": {"type": "object"},
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["signal", "severity", "location"],
+        "properties": {
+          "signal": {"type": "string"},
+          "severity": {"enum": ["info", "warning", "error", "critical"]},
+          "location": {
+            "type": "object",
+            "required": ["split", "line"],
+            "properties": {
+              "split": {"enum": ["train", "evaluation"]},
+              "line": {"type": "integer", "minimum": 1},
+              "field": {"type": "string"}
+            }
+          },
+          "redacted": {"type": "boolean"}
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "required": ["algorithm", "canonical_payload_sha256"]
+    }
+  }
+}

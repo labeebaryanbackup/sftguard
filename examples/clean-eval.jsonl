@@ -1,0 +1,1 @@
+{"messages":[{"role":"system","content":"Return one class label."},{"role":"user","content":"Classify the held-out development fixture."},{"role":"assistant","content":"class_a"}],"_sftguard":{"token_ids":[12,22,32,2],"token_roles":["system","user","assistant","assistant"],"loss_mask":[false,false,true,true],"eos_token_id":2,"original_assistant_tokens":2,"truncated":false}}

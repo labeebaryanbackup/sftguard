@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sftguard:schema:confirmatory-fault-matrix:v1",
+  "title": "SFTGuard confirmatory fault-matrix evidence",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "tool",
+    "provenance",
+    "protocol",
+    "summary",
+    "per_fault",
+    "cases",
+    "gates",
+    "carry_forward",
+    "status",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {"const": "sftguard.confirmatory-fault-matrix.v1"},
+    "status": {"enum": ["PASS", "FAIL"]},
+    "carry_forward": {"type": "boolean"},
+    "tool": {"type": "object"},
+    "provenance": {"type": "object"},
+    "protocol": {"type": "object"},
+    "summary": {"type": "object"},
+    "per_fault": {"type": "array", "minItems": 9, "maxItems": 9},
+    "cases": {"type": "array", "minItems": 300, "maxItems": 300},
+    "gates": {"type": "object"},
+    "integrity": {"type": "object"}
+  }
+}

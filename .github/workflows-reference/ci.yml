@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    name: Python ${{ matrix.python-version }} / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install package and test tools
+        run: >-
+          python -m pip install --upgrade pip
+          && python -m pip install -e ".[dev]" build
+      - name: Check installed dependencies
+        run: python -m pip check
+      - name: Compile Python sources
+        run: python -m compileall -q src tests scripts
+      - name: Lint and format-check Python
+        run: >-
+          python -m ruff check src tests/python scripts
+          && python -m ruff format --check src tests/python scripts
+      - name: Run Python tests
+        run: python -m pytest
+      - name: Verify checked-in evidence integrity
+        if: ${{ hashFiles('evidence/v0.1.0-confirmatory.json') != '' }}
+        run: python scripts/confirmatory_evidence.py verify --integrity-only
+      - name: Verify evidence-derived README graphic
+        run: python scripts/generate_readme_assets.py --check
+      - name: Replay evidence from the implementation commit
+        if: ${{ matrix.python-version == '3.11' && hashFiles('evidence/v0.1.0-confirmatory.json') != '' }}
+        run: python scripts/confirmatory_evidence.py verify
+      - name: Smoke-test the CLI
+        run: sftguard --help
+      - name: Build source and wheel distributions
+        run: python -m build
+
+  web:
+    name: Node 22 / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Type-check, test, and build the viewer
+        run: npm run check

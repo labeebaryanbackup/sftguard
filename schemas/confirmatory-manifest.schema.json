@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sftguard:schema:confirmatory-manifest:v1",
+  "title": "SFTGuard confirmatory evidence manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "artifact_file_sha256",
+    "artifact_integrity_sha256",
+    "artifact_path",
+    "implementation_git_commit",
+    "protocol_git_commit",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {"const": "sftguard.confirmatory-manifest.v1"},
+    "artifact_file_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "artifact_integrity_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "artifact_path": {"const": "evidence/v0.1.0-confirmatory.json"},
+    "implementation_git_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "protocol_git_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["algorithm", "canonical_payload_sha256"],
+      "properties": {
+        "algorithm": {"const": "sha256"},
+        "canonical_payload_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

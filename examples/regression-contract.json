@@ -1,0 +1,17 @@
+{
+  "bootstrap": {"draws": 10000, "confidence": 0.95, "seed": 2339},
+  "metrics": [
+    {
+      "group": "target",
+      "metric": "task_score",
+      "higher_is_better": true,
+      "min_improvement": 0.05
+    },
+    {
+      "group": "retention",
+      "metric": "general_score",
+      "higher_is_better": true,
+      "max_regression": 0.02
+    }
+  ]
+}

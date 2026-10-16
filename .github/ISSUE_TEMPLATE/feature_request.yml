@@ -1,0 +1,46 @@
+name: Feature request
+description: Propose a bounded addition to SFTGuard's correctness or regression contract.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        SFTGuard does not train models, predict final fine-tuning performance, certify safety, or automatically publish reports. Explain how the proposal fits the local-first, fail-closed boundary.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and user evidence
+      description: Describe the observable pipeline failure or missing release evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Include the expected PASS, FAIL, and ABSTAIN behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: State the synthetic fixture, negative control, and measurable gate.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy and sharing impact
+      description: Identify any new input, artifact field, network access, or disclosure risk.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Boundary check
+      options:
+        - label: The proposal does not require posting private data or reports to an external service.
+          required: true
+        - label: Missing or untrustworthy evidence will not be converted into PASS.
+          required: true

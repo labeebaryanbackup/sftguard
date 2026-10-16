@@ -1,0 +1,4046 @@
+{
+  "carry_forward": true,
+  "cases": [
+    {
+      "audit_status": "PASS",
+      "case_sha256": "5f57f7b095e2563bdfe60e10e6a808433a09811b55752bd32aaf7cf79b001eb8",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "8c8e6297ef27bb9f5125037ba7f3eea04794bdc14ef2168404b008b53b4dcbff",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a7de518da70ae0f64ee7d96fcc3552a6a6945bd011024e0c25335fae67b4bbb3",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "0597243d651815b44146970c3dc9744c5a43fd11c98aeb3d39a26fce9f5b3531",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4ad0fcdb6576067ffdfe1d4b0216a2a58dff462bcc251edb496e07ddffb8ba95",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f986bc41a0b596c99c23127dd74dba3576fafad82fc021bf0e47ffe012724188",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "16a6b1085342447e14607a74f722fdc4a69d06a01843fb01938ecdef3a3fd8a1",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "042de45aa942895b11a6999a1df92ae7bf9a1e6c447cc0eccd32c67ee08dd8f0",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "359feff53fd877e5fd246484a82239cc64908dffd028f8294eed53122f7b20d4",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f56ba366d44170e2e7019bc90c2de2501b803756b356f5f14c2668c2d4ffc0ac",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "pii_like",
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4100
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "120af0f7bef4f9f196721ec14a55a10cc8878a89c73d4e89386eec45d96b8103",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "acb5d289c02e4f9a2ae791b163ee53f4b8821ded0cbb5658626e13bf98061585",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "3fd48a916b7961f34b8e799f28ba46f3f549c670dbaba442030db61391b12395",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "36bb69f44f76c9f41ade010d997058efde81854cb1a942f6d2901e25c3ffc28b",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b61e7a38c7c46599e4ce106fb6dfd06dc26b057299561a59873b892679315747",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "775dd68b9272d1179f575b239c41b1881d58011ac0cbaefb0e135a499bae55c4",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "c23421a5aba39766532f9f64bea5cd28b85ac42b2b2dcee22904cca34c9d8c19",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "8f78488a8cbd048f3ad41be28707a60717270620ba896cdfd1073ea937983066",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b66cfe8ff43543ddc543ae2ca5074fd634b0ac889debcff1270a13f30d4e1eeb",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "0730548b36ad1704412297fdb158b51c39ded538bfae2a69c74343c68e5469d2",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4101
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "f31c71167af0fd046d6c777ede394ab3db0d1adbe54d53d3ca4a450fffb421c7",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b1d213d79e5af97317cc8837a2739aaf308511dfc0269c209806850212fbe141",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "367a5991a0512eb801b5a6d6571f7e2f2e9e01aed81172d89f00c7cbc44fbedd",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "453e63e7af0b039c0a8b3ff01f1e8cd5041ca7fac7d215d8638ef4c9d3671f48",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "fafa1ea2b069ad8548bfe8ee128c231fe6ed0f171ad63de2a94f459e30db9a19",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "254ec14b57f9114db01514ff91b51136ddb449c1e93ec23d2cb4e3b3a5803c10",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "a35f60a6af78c040dbcd16d045b75461eb991ae38c87d667d4adec9ac0c5e1e3",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "89b6a0312678a385d9d3e060f72dc30e7bd1ecf46544e0c0e2106edd08139e14",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1f7fcbbab56e0ee8776fbc4b0b1c5254ffcbcb6e9a2244443f7b151fb96fe08e",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "9759bcabf8ca5a20249df2cd3893565df983da09325095301d2d64333a54a4ad",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4102
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "7b4d254c97c716ce74ef7a36fa0d6f53c2371e0dad7955cfcfc679e9f124fe80",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "dee111a8f5014d0d3a9dcdb266d2e6313265c45f6fa893929863977f456b7530",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "932de8dcca5274c7fa28d543a7dd26ac20f1b308adce0077e48400c3139a68ef",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "c45202f0ec58f33c7aba100d955571db340da0dfde2f119130dcc8be4c264f05",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "8512832b406abd33bd75d779e3f637d5094548b2f1323c1cdf65447254bea926",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "9ef256075af045c8e1d79bdad7895326766050559a6c6d3c6c3bf53e199915e8",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "a356c506d51c444b5ff2aa409adc75ecbd3ca5b66ef6b8d57598841cb5af03b4",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e5bed19e47c3622936a09530537ec9da6d0105a2ed37ecb0361e195d36964372",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "5ac22a11bd9776e2465d32285e37f49a29ebb751486b0a91acbdbc2d2f1955c9",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a8f80a191416c92decb18e0d1870d8de8d07bbb7f8f641c8eedd36685a9a1fd3",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4103
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "6b5bc5465d5fc19760bacd625ebffb6ed07df20734fac9b02f529a55d50784cc",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b9a58b5f0f72bfd71d4615c5dfab7d51eddeb328d73583f1a89f7da05f8d6c9d",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "8cd4438af5c34ec74a32d496b5b17740978284a18caf24cf94823383430d83d0",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "de51b9acbd8bf3125dd7e3e4b1fd985d0f64cea1ce09c0504da8627c323b13ab",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4dd1e127e2b5d71cd1911ca1034f46d498d9e363dd047b6a09d182113e0d4d87",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "56e33d0a805d7211522f1a4105e4c7e77188fdfc85b656641f67cb4ff4146016",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "7d1d77341d0e6d9ce8cc78567510b0c1e014ddb9c0a1125c8c4a1d3c6ee82cf2",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "6786ed7b373b369d4ed06b2a7e217c23fabdb695cd16c4f3ff19dd6f3da57cef",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "9e7cf17b027e99c4bb9af650744fa662d0136faf9194b370aabd02fccdf9ce7d",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a0d4a629a532d604a37ec2b3e728e130afff454208a24293c45416fec6894d32",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "pii_like",
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4104
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "0357c77ddb7b8942eea6dd48c13d13498a34a483ce8d32def788df3903512f7e",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "d535374ca00d74a1aa5706ba649d0be9509ae7497c84e3ed67fd23966e9b12d8",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "78b332a3e31c530aed0bac4efaeba2b12d21a857a13c807b0e4d612e7ae00ecd",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "301b0b7143a981ec5d5ef2f49f3368ea724fbf84887ff2fe9f81693df423446a",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "c97406f120eb6cd1eca3ac659806bc3d6ee365b1e735352d75aeca0a51437d97",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "c5eefbae3a9dd5582f6a34192366a73fd0db77f960316eb4d763449f5a585d90",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "573b28256db635507d75ee178391c283a1676402c903b1d323bee0f9e4e7ec21",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4be6046ea204fe4a9d05b91a7e38c2eb1e71cc23d08bfa1a3f94aaa1f8a929d1",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "0d89095827d8dd1a028f8ef5fa5714562e099d741c147350fc7e1a1a7e700b45",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "3a05f12c090dffb830820a8a4ba3a0a0a51efaa334f2f00753163b6450f54e86",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4105
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "35bfa7f3397b36cfb88a64209ada36f1561059efddcda8b15f0cb61f0ba1eada",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "388b6d77a2733a0b00964b8785f6e997712c2fb2de1b32080b09667dba828c35",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "0b11d0596e798287903bc1d3adcb723fb4d65aae8282f0dfa77df0fba3155557",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "d211f8ebeb51fdbbdeb82ae8d2442b139019305315faa4d895b848b379115f89",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f2694b79c5a0dfc59d2e974b04bba447ed3592e6497b0eb067ab6e6be0c8ab82",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a7c0768edfea63f94a95a8e3a02e06989722fe0a3dbfd4718a555112181a8406",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "f14f86467ad8e543a32cb971f4cc25ef8acf94b58870442df9a8d58dfefbffbf",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "bbbd1410e779b083ec3d9244180f4b5836d47d568ffb4bbfec8de2b257d33ae0",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "33f97bc06672fef67cabfd447de3e170be89df4867fe0caac23de6570a70b6cd",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "69f0c24c572488595af7a3ebad44a7eb73bf7f1b9e8ac5ab88a555bbb47d07c1",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4106
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "81f5b10709af8749c64f2c74b4c121f56f063aab38b25a94fad2be049643454f",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "957d37519b287f6288f437ef940656179f843840e783afdb9ba0176ddfbdcbbd",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "c824d2e040d07850d875e6a09edd91f102df9358f8b6d7140b41fdce6e146ea6",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e3f42e545ebdcd701932f8d3aada843dbd084537d3cfa7b14846ea3ce8bbadc6",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "539b776c87f1f131537f1ad25bb03ae4155eeacfc8a941b0b66ecf401e124c79",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1501d0b8811558fa19287c34e128caab1fab28fb5f7308f99f888f0ba7edef50",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "87ba242d74cfe2c8fedc44a4dfec37a5e14126d21f8137e0c9ea4ce34709cb69",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a7175063e375b753d54089a270b189ecd3a33791c2f17f75c2c963cb053ce8f2",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "c177e4613e011f0ea32ed030fe199c25d715594d1ba71d0504556778f5aab5cc",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "5d35601df6a100740e2c4de5e16652c64a90bb4d093672417dec5b95216c4d45",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4107
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "3f55c9481bed5ccd26a3c4961acd704fba2f1c29d44ff91adb4dbf951a2e551e",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4e4bf52788b2088ae42448f7b128e58c7afd35b08d989dbee51e245d5602b0b3",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "7d1093d24803feaabc083226aa28078c649174c79ed5e16d7812942e40c6db88",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "23ac621787cfb11972865e4a03a2b305d96e25ea570145d2f5b074fb6c89fb17",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "7210d38db56ef25b9d6405162656d4f2d29516382ed1540b13dd0c3a7fe3ccf5",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "dc990136da2c86f76cff299f0d7cb418ffa06f1bc2f0e0396cd3829ab72a1d41",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "4da630ea56f99fe5abdf2a052d52a84d9c1139cff98fafa2150bcb1fce5addeb",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b946eed36e29dd2dcb2fd99b7f5d89b8c3bc406d1fbc902e6445d25bf9d81942",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "7e50faf6d57a47afa4e4788bddf5c8a2a56dc0f030dacdb88d1416e092309b17",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e84634accd0546bc1f7428633989550641c6d535425d70bcbc79cbf70a51eb59",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4108
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "16ab3ae2999883dfff98fe5c1b9f25bf145d9c111243f61aa59fce5f3393131e",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "404fad990a87680a5c453030d12b521731161751155602a1679da464a01758a6",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "54f646751f4d9728aaf5f1b1acf4b387abef8839ca5b3a84418f865fbca2d414",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a8cc437e757c12ac3e8583007c76524da7cdfe3e73c94491dcd72b0497b6315c",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b4cc2d8e8d880c4c56ca51fffd59f7c84f34c171ea027c93b4eb05ddf3e3cce8",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "3bbcffb09f5f270c189e5809d5536313092ee4b4d0b0b63262a0333d0ad7feef",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "44a4315abd61560ed375319dbfc32b7935db02f8fdae9ed13628d0859fa46c83",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "87fe08cfdc001af12f52cda0e976e33ac176594bc7dad1f3355b8aa6ba6e5725",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "ebb6d84aade1e122483ccf316fe832d696d25643507f2ade49312c2c53523220",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "91e6a1877a4110abbeb9c4bfee9e7f5114364a92e81bece8a1847b9e3da4d34c",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "pii_like",
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4109
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "13e22dbd3f550c00d041d6bda9b9af93182d420ec5ce262c7eb1e5be0895596f",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a0e045acc17b0cde75dd141deba704525bcf43005e5ac33d003a4aee92ba4dd7",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "eb7574be69350248970eeefe1c00f22bbe89359d67065d9a44c36b30beeccc4c",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "976129c7dfed8f68337072dbbe37ae13f09331212b383a2db767c741842fb8da",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "43241a51afff04a02b750c7cbc5745815455ff9bdd9971e6347e46176211a5b7",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "53e251e6f05f21939c1268553e01a64b60375e4d03c045974ad8c0891c969d5d",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "44459ba9ab22aa4d9a50b2f43fda8aaa5b1e821ac485aa6872552f11293b5ead",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "48974ab2b2bfa90fa343fb85d51d494beb52158af719ebe7986cbafe7de115df",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e5180f667c629783ea010b565639f925584acc429f1df2f1de466e57e1c8c7f1",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "875c951d9750064bc5098aa338d0dc980121af1fdda5683646aecd63f313d486",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4110
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "7dfddc4a22ceb0e044e816a6156957ac53db4ca228c3f3189ae97dceca363a73",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "ef72dedad0a502abd977e88f3b7c033a5c84a5580e55a1a975c66a2aaffd8c6b",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "eb64c69ddc03e8ea030186f2d7c537671a53117dfb93ee8eff4ae6437d85b708",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "6f48b88c5d405e7223316c2daae172f7c6474444b0fdf881cad1b4b20fe1f656",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e4b108d581e197a5d0a8dde4576982638ccc5041a3d148678fb82f63d321f88e",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "af5d14eab27905b91977d52cce4115f05d97d845f00f92f71d53dfcaf1f9cb74",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "4a8e75bedbba5833d132a74734e1fff6ede0f10a683b81320304ff73bbe52aa6",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "6ea9a18dd86d50add2721abcef3d377e79b82cb4148812d1b49ea7735ee44cab",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "2cb7fdedf4c31080700661df79230100ff4850f9d074f540682af35a237a3ddf",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f50dbc3742daa867f38e4f41b50a3fc32ebfa4a349d973283d5d1584f0438504",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "pii_like",
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4111
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "66c3c8e28b6242fd3adaa982629e024e0786474c81d3dd1b4ff9fdd98c60d875",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "d8f75a1ddb11959ebc5d680d465a345d7016b32d96712be2e50d8a5cd4e57502",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e807cd36d8d23773c4266fc1b08ef77db809c612af46ae408fdd55637b6bcf53",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b3ba48bc8895baccde7036e798f554d2993ea52a92e33fdd2869744b68d93b01",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "baa2b53b0563345ba7364eac8c69e8ef939131b40d46c425d3a242125590cfad",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "2433f33f22bc9e2f89b357c47903ff37bb8622249f1197d95338d826068a0b60",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "8c4bbc28b53f1de0f445b862cf781381aeb5fa9d880959f4050098365f13ef3e",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "551a9c8d2f2d57a27dc2bc7d0907824f603ac2f9436b621390f8e882a4138134",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "ae7626b6c200b045e878b2baf287a71cd2de15e7e7bbbf16ac3e2d9cda5c7914",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "57887a784b6993c35bdccfd1c009c02bc26599c03e9b56cac3c86e2fc0eca709",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4112
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "3a54d9b34bcab93e0a87aae007e57a8e0ba8f67bc1d2724b2a5a703174f900da",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "fab8ce95fd8f7f3e18b04ea9b47735ca3d3c6b04bafca85b04173ea228a421a5",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "07fffcf0033b9431c2d528cde516b8b1699e4cd80164eab96b0e579b3714bae4",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "25d532430f368a47b2bb68886da036df129f54c25420d34eaad9476d17ebbf26",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1fad6a0bedbebe24c4c0fcd35e30ac7bfe37466101b3153a82dce868ee709f71",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b94134ebf5075d0ebdf5f1e575e46099675afa57d5f43149fbcfd4e220f65e32",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "d238e79b8da9726496b5d47d61054d5efe5782357c939a9e003047c1b0a6ae7f",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "fa1feeb189e2a127a285a90d3a79e15820b13acbc0158173ff5e39b80f9977dc",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f406f8bf9510703f4464930841dbd918bddf8ec2891312f308d63f99ae827caf",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "bc2133f04751ad6baa0e1538988e5adeed67c4b1c87ea476f414ca3ceaffffe9",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4113
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "37edd88f5a6a51c0d079669442b7918e13acfb3053b0c2b2b04baeb1a6b8be04",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "19ab6a4737cb0bbb576754384935431f9ea290c832a370629471dea31bdd597a",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "ec6198da48a0cf47a598cb82a58325fd60bb21dd312c966a3fb52fac874d7628",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "5ad9284041c1cdfecee063dbc61e7b2d23f387e36deb574d312d1d05e05bb3cb",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "72c7b124c34d89907014e8520892b8f8c9fc208e71c295d87be62e95e67f1817",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "10bcb0ee3a4a896dc949c423d04516be468d4b300de74a6bc5d61f12829bf33f",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "0b153fd092054585f9e42b7e067768a155b58f330b3ff9cc8475135d8c4d7a2f",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a580a0124311660e8e71b23e3d4524e3bb7d9728938c089e081ae85323ac0abb",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "97c8be3f733831e8875daa15c3191ad8db916faa2e79811b7fcf6ea38334ae96",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1baa6ec0933cb9ab5ead20da872704959e47719c5e1f343ccc88cb7eaeb0f0f1",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4114
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "bbef328b37eefea4cab9e39000fb9a80543e05ad3c58d3b5035c332ccbb6a4bb",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "28e9f96f3239b2e11744226be8926d97016c8c2062720a642e1d35169ace75de",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "7b43a727e7f5b064315e905556a05e6e82d560fa5b53320790f430483b44b26a",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "5dd9544480802ef6a5d0f5ed5272a6f462f9e334863ede7ab4b96fedd8e97da3",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a6426429f1dde802b67152b70d7a951a220039633665ded659405fad3b7f694d",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "6ed2116fb16d55c4045b1ed9f751596e72ca6b81d3501a1306b2870e247a5c71",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "1946e5194c6b0215a036f9ce87881450d7769562561d20c353b1171fe3ec0e5e",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "54803dddf060c5df66ae3a294d2200a9ad74b634cec0e6714a27bb5128041e6d",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "67707cb5152ebb39e404484a72579c5d85e9b832bfc3b84f0709347ab5ce2f3c",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4feff72c16b99af980e07f73af5d09f0653e59064d29572af5c119703d145efd",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4115
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "544fe66e06df9d8eae8b514f82d188c5805f54c6b44e8c9e99fde81743ae6088",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "dd1f2be80def6c5c35d27b765bdc260a5f87fc891b04da9f808b5b1aac84d375",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1c87f9a38cca9996a642bd468eca53ef29035199a2538771bd53332fc208458b",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "eb65d44235588c2701caf61b97096fd6be929066a7a816811f3ade539c07d5d5",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e82ee26e27e79d60f29af20bb9a8ac0c3a9ed7e2e173106e2ae7b9dff2e31990",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "8c80ab26509dd24f248d856d9f9ae4ea35b417bdb03bc8afe02746b80e0745f1",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "db01b70329733c65d34c0fb90ccb607a01edbf63798ed62d5d86c605150cf728",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "8d8ffe170bb76fb2c6e6e2e8454c1621d186da05346a1bca47cb9217b6e20a53",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f61c7b068547b6b5e13ca75f6a003bc0a83a39ea30ec64f7f34772f765b84827",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "96d3e596f7e837b8099b34b07cb8d5fe1f456b82617411bbf29d38a6e594ced0",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4116
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "e3578eac6138c96ea5f83a44128a892d5b532df56beb797b336f7b416f4b4cd8",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "5761871ebadca00ffeb6ce694a8a99b02617b188a26ae96b06def327fbdfa022",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "26332e6164d02075e6f8a63979be5d2dacc14a6d1357d2d34bf9a595a6e2a3e8",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1020bd0cbbb199b2f53e320429c1a0ddc8e44cd99ec9f3fb3834e5e7a82b54d5",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "d00ff25cf3db7f51ed80fec4de8418a1f6562673a25d818c6c96ca195a6099bf",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "dfa3cbbca0df85b4ae04b734512d5f1bead010cda38c196231ab430c1775dcea",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "9697c78c821fc1da30e790c182c52545ebeee817f7b985e217a37cb06c202a0b",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f64f6bfd907b608a7e888f9683c2eba0b1d19082254f8a05360728e5e9f2c07e",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "bddeee3f5fb20185acd8a7ff345dac9e4beee1dba2d98fe4eccd0442eebf5092",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "3ea3daec9df1f75436493190b62b231f2c422f0c27cf277ea022c0fe72d7a5e4",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4117
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "215b2b8a2b69cdccb8d86e09367e4c638ef672bc56001bf6af85612fa1d8110a",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "34602eff64f63429a792fe5b7f4dd70c8b531dd92dce1bcf9cdc89e735acac05",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "c327b0d7b79a982d094bcb155dc619291b81a07c9405d0cb893ff488fd99cce1",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "31b4610f45804044abffa2747bdc0ab0e76c2afc6c2dfec79ae37bfe569c8737",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "27b3db8b00cd853d71beefbb7c22bd38aa6f526614586daa3e44a4bf79bb405a",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "ff6ae3e4a32a5bed0338e57bbb281aace312b55554ac6a73f4edfdf5c25b9300",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "bf2ac15a331d2219cf33e51ac9bf6f12d68ac2ecb000e97ed4cc88610a95e7db",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1ab7211f6c6d93209b26f92c378773996d72f376819e147ab3c7741c8c24848a",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f9995f5b0657d034246c90353857e919463a3ae791613aead70a12425dfe38d4",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1b605516e660fed7390537d33aa27bb0905d559f2d7ee54d41bee88de3308c9f",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4118
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "578d5488ca1f03f66a2e51daa018cbfb4eb3695257cf37f19dce266d5b47f957",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "dbc2f38040fc5c4aaf389baf680e8134d3f5d673ff28e5d05e7ab1d36cb41b01",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "cc4d2d5deebbedd2f65e5e00fe290c4a9ba88f880c1c912e38a2f5389c500976",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "6aba84bee2b373f47df6d634a47753019219b31071ab1eae5231b7d0c92ebce2",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "49d52d6c85a7251a6b8f7e3048d3a12ab3f5758d6b94457d2c7c1f66d0ef74c3",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4fc10dad18380fb400341fb4f3c31d43200aa2f61f0dd610c4613892f7949311",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "26509933959d9b6bb31fed0040277069c4d501b594f26f3d10a421c9de87794e",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b6b6ef537498600353c38b4250cc1c0634e1ef73a9fda8f5f8135f5d25b1c606",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "9d5ec3586d48dd994eb523b543561e5b28e1ea7eee902e17a2fb7982e406903a",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "9169c633041ba1391853585cde0fb9596a8eb37c07710f90b5ed790dad8da86a",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4119
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "bbcd8caa00e3132793f45b5c8f33cd53516d15dca283a5764043c05fbb8d3bf3",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4fa740c406c8363a90ea8aedc2978350951b8e15db19384dc15709321fa196c9",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "578ff72f19c615e74982be92aa0ca95910660d2b4771d0e1119103bec0dcf12a",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "7544417a8c3fc5269e10a179fb154fb8325128a50110ff6d8aa215df819ecc0f",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e2b3b672895770e376fd76c5d0aa4e9b669a4096b00f8bce567381283d042170",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "38df8f121fd79663e94b9fc02600c98931f4a09e9acd33ea44cd8e0e30c784bd",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "6756cb61538b98de82b7b43102d5d706b5b0e5193c53f730aa89738141f4c062",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "048e1dd2077ac83a6f0f57d60a175ca05d833b6b158c039f9cf069cd57f18d51",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "7563f724286e0fd0b8f7865c9aae6f5e32c1a48005b084dc6832a0047c53311d",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "867695627e032e4647af711b708ec63ab192f8c916da84639591f4e0c82c3b06",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4120
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "d97b7d1917ba56d7feb21f6003d888c25495df43edf0512dcf9a0611a7b7a289",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "411af9edda759f8439213951e037409284f2631a959e8f1fc751d4b664565a7e",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1f77e9b8573165cdad20e21f050b20654a5ead43cf0535ba1e6b51eee4d701f2",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "132739f8e130a177843ebf49911f6bc1a651fd9d6bebcc7626349b46cba0a230",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "ce87a3034e82cf4a6a60d443c45e3b3f743dda499d5d9f9780e7a2c1c5684797",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f0a8e6bd6ab4b6e333c76d79f714c5e7982d06970115eb388b2e85e62ac193ac",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "b19b7835729877ee3cd7e875db97cd8c588013b4f9fd561c0f2c23ad1a0a5957",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a92282fc9334146eabf38a1f71dac494f50cd8d7920167ae30d3a0df67e4e0f1",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "be34c3262556af1cc65bad81e503c05e353245281822d4fa2f5cb49c90d55a93",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a84d79305a8d11bc1c6c30ab20914475e8aa868783e2e65cb861495f2dc23e71",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4121
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "3821ce93d22fad6a9b4aca153694f02360ec8e48dfb556cb152cbd06fd21408e",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e9289e9839d261916b40faf59bf063d16f8938d5e2b0d7d2786b840092b0464d",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "dd5ac2328dd6fad35f0f26e5d720c40aff8b3cc5016d150d4448570ca3c5dbfb",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "8961470746342496bfebc6fd31724c058a1d8fab7c5820e2b42a6a9df9349f52",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a8117a923396d5a8ed32f5ba72a44d0155ca24fbfc4463da9054a8395b0111ce",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "64c642d6283e190e279d3b1318a15c4d7e0c9f6a0cc9530aae2e17119e23fdec",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "8fd20fa9287512bbad63bba5b89f085d2424c42f57b513350d7d7c86e665dd1b",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "c3f5855921f6652f2cb1e83e7c08361d25743f3402beecb047ebb6c5878465d4",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a40d2bf83ad856814248cfc88b99e405c2ea85860e129e5ae5f571eb0d49f48b",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "50366833aa7c4c849fda79972226f8498c530e8e6f5571b1ca019c5fd9cbf42e",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4122
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "646fcb1faa8b3f173249614e8cca1446b62a791587830432888729e308b014bd",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "798c037ab41b6b924eca3a20e953c579dfcfe2ef7d0530b5a47f1e9de97e7e85",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "2585d8d02cd838a171dc13e2b955cb71cc9607e10f06591717e73ccca1e9cf94",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "9277cd52353d1b28a444f9b6045186649dad9dfeaf1116c135d55f7bcf488384",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "6873d3a4ca6385ff12812af03fe126911aa1fa14e0ae17d184a8bd2a74ccd9a6",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "27f70b80eb6ae96505a6762ba8b2b65785cccdcae231ffa5f63d5137140e1fb2",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "0dadafaf18d0a35bb5ba6ac9bd893de8ee9b07bfe9b7664b8553833b73b403e4",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1896027123bc3c71daaf579952bc43f74b1a9adcf8c06c7c6d81f0484e28c408",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "26d786e5bff4924acf6a01c4dea6a838e52ebc085b244eeaba9bec64fd01ef3a",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "8bf5be2d60c97115f3122b6b54a0c34db8db3c1f289a5ff8a63ad9a41d6bd7d8",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4123
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "0e732215ed158974025756a085608e5b0366d01daa2cc2ab777526123e171cdb",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "9da5a47e584420e62d34db505129dbe1e015c0af68507dbdae475543ba95fabb",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1da487165c1ff68558b35a2c160f87c5f419400493b849c20e829a1ade0c8c4c",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "807ee62284217dde4564c6f01138254b8c6a05d3aff7de9be88ed9b4c38e5b91",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "ef9197610c8b70abfeb05e1e6b51188c5cbbc3a9ea1cf076a29ee9a3ec1c17f8",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "8366bed91b48aa74b6394a9cd45193b30a415512f4b74c9614a974c1065c7501",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "dd87856c254b69aa6b3a0fcf348e48acd5b27b761440ad7449719a4c9495e803",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "5e846efac574b9980587f38bae8365217cf8d243a116f099771298da03fd7470",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "66521150c766c7a89380e135d37c7cf1e8407eea97b744bd4aa5a28b73197f2d",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "33554dcacf18b1dfb30f7a890f81857fa0bb325b99509304dce565b509457bde",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4124
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "ace9cc5fc923ef4aba52567657243163556880685e5f325a58d5c9b99601cead",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "553e11b53c6a7557bbe3fa51ec8709fb7cba2ffe8433e6c8e5c2e2c9ebc0db4f",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "14253fb73cd8cfd707ef19085cdce71069a08384d497dad464b71010e5326bd0",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f2538bd621b5ebac17f84979c03f1e8fc801ff1e73cb91401d95e2c2ef6348b9",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a5dd4f010bc624d9b5a42f6353c7689b4956dec905c0e84780c389f7575030b9",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "209d24608f720906feb78176794b9e65befb79f207f4a19aefd29d5db6eed22e",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "915213d0822e9e4ec6d2f7cc5a3a9c4ca468b6c24552ffb2da9f705d8134f778",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "fe528d268c95566c4c5c8a95dc50e8d3e3f9b4e3aa2e8d93e32ced13f3c6a8c9",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "785c17546e76870cfd6ae94f8f6590d0c568c78cebaf2483bba0608e9a842589",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "773337be8c79756471b1b682f76cf8de910b7e1a8d2e8e2e20199cf299d02279",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4125
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "9da9642c4ad79e0a58bae384083b6124b0d91116060ad898e7a41981f7dedf01",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "ecadf36b9421e676893b7ad6a9cea00b75264a242b9b3012c0587f83bef3461b",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "45b7685fe0cc4f18ebd7f1329d53af30a39c86eb3efbe15a7dbb3908959d2d2f",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "c7dc803be7016e987b3acb087bbc0a386f019f24a16194511b7d3b017e3c302f",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "10746fd1b74a5d41f7b033be72a8af5485fe0894356d6338f60c677094a14037",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f08d878405300c29302418b5f7733b8ec67c59c73665f37338b95c0db9a1af44",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "23078ab97b51def96a5987736b0481e6b793bb566d5365c8c8a18c59fb10cdd9",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "960c6f8ae94e6f923e0c721d773fc5848ee30b3ccdb7bda446d86eb15d581d8c",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4415b1cc4f4978c9b92215595e47d8ac5e2c9f4dbcf6e588a3bf8f2a6d336129",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4aa4ca025171bbf93dc618b5e1131de9ef7abcf9131c1a09cfca4037b2903b1f",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4126
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "5e7619217bacbe800be15894fdf3ad12349b56d141e49ef144bcdf6cb50225be",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "63817644c1806993b5dc199b4d44b7c3ab2b4e461cc48813f2ea75c390fbe46f",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "daae4347d57097c8d85acd647ce66ef4f78b34c74a9fe42897061fb42131186d",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4baaad4dadfda8644d706b6e00f2a63ae34938453c6407723f4e7f61ce0b4215",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "6cef96304628e0b8d323b973f2ed16f8c10847236d7967304aea9d24f6deafb0",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "824850b3d6d24275733316e6c951de783edff63a4b2491af16e95a2c1c423c40",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "cbf93ed6573a5a1460bb7244b8cdd161a79fa551b97d607e4ae7ab9d61623f0f",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "e1aa015ebdea2f62b0860894478b8e8e361de2be22015e03ef6a5317e7251978",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "70027ac367e4429645b880be15be4275d85941606f1470af9d2569bda75aade7",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "c426fd8580ee5c0310ebb04b9baa069dd75d9ffa79861548e5f09d387e05841f",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4127
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "475557e6e5b5df96038968ea2ab8b172d8d49a1aa512bb9a17abcb367ca7706d",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1ce4a2d128a6db9d2ac617a7b1982efa8039cf0c0ec5e380549fbd8c2e241c01",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "6de06e32e00ad58457e5bc1eb4730fd100220389bdd27ed657bc0e24e569f29b",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "f3965d909f2d7c07c8fd8b3a8d12108fadbfe4cd9aa2e851f6fbdb19733d6bf8",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "4bc2f2dd8fcc9ac78ff1b0376448cc431c79d0575b3150c4b4962367db3b3985",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "19bab18fcca10c08100c5062529bb3ba8bcc4a57d326ef73650b7dc04fb1275f",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "2b04dcadb2ad9c50b0ffb6e520007b34bddba9058ebd5ecc8c663c8682fd3d40",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b2c2213bd18a1ef9041b4e947ac9475157e35ab565fec770d3387376b5c1b7d2",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "0dbf42390ad6d9794a99a0eec77c477d59cbbffd9f8fff778e4615dbf0f5503a",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "897eb6d79aae29b5abc0ac4ecb501a80a382197dbb3fddfd738b53b915188108",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4128
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "f35dc4fe626aeea7bd1c6310cccc2b8ece5eb3334550ae9f4bca91cb9179c039",
+      "expected_primary_signal": null,
+      "fault_id": null,
+      "kind": "clean_control",
+      "observed_primary_signal": null,
+      "observed_signal_ids": [],
+      "primary_expectation_met": true,
+      "seed": 4129
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "d8282f6d967d6c102301b3a28ae74115602da73dfdba04219ca185c42a2674da",
+      "expected_primary_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "kind": "fault",
+      "observed_primary_signal": "invalid_role",
+      "observed_signal_ids": [
+        "invalid_role",
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4129
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "17e0f95ecef38e00a38defb0d746c11a559c76878503d2f8039f7e1908150286",
+      "expected_primary_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "kind": "fault",
+      "observed_primary_signal": "role_order",
+      "observed_signal_ids": [
+        "role_order"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4129
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "05dc1d34b33f4785c3a8897d0802fcb1e399ee9b775c68e4b79680619d50d1dd",
+      "expected_primary_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "kind": "fault",
+      "observed_primary_signal": "missing_eos",
+      "observed_signal_ids": [
+        "missing_eos"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4129
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "68da4319e9632b2a92423b2c329b8e0dde098195603b1e11a5ce838401978ad4",
+      "expected_primary_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_token_supervised",
+      "observed_signal_ids": [
+        "prompt_token_supervised"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4129
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "b25884df6ff0293203fb96d29d45830d52b34a01461bd9c745f16435dfb2cc70",
+      "expected_primary_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "kind": "fault",
+      "observed_primary_signal": "assistant_fully_truncated",
+      "observed_signal_ids": [
+        "assistant_fully_truncated"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4129
+    },
+    {
+      "audit_status": "PASS",
+      "case_sha256": "93bfdf6bfe90cc4be235df021647054e5b23cc62e36287d4ca3f8ad03603f86a",
+      "expected_primary_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "kind": "fault",
+      "observed_primary_signal": "exact_duplicate",
+      "observed_signal_ids": [
+        "exact_duplicate"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4129
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "607cfaf4697510a4104b4c7b2647e5e6d31a528ff4bacebcbbf717c915ffd7e5",
+      "expected_primary_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "kind": "fault",
+      "observed_primary_signal": "prompt_conflict",
+      "observed_signal_ids": [
+        "prompt_conflict"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4129
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "a173586ab768cbb3f554912647a6238bb2b2ce715b69ffa183ea8628ea219471",
+      "expected_primary_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "kind": "fault",
+      "observed_primary_signal": "train_eval_leakage",
+      "observed_signal_ids": [
+        "train_eval_leakage"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4129
+    },
+    {
+      "audit_status": "FAIL",
+      "case_sha256": "1e7d276589dea9ec13d9e741913e6e3e55c305deda7cdcebaf6152ea76bf7ee2",
+      "expected_primary_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "kind": "fault",
+      "observed_primary_signal": "secret_pattern",
+      "observed_signal_ids": [
+        "secret_pattern"
+      ],
+      "primary_expectation_met": true,
+      "seed": 4129
+    }
+  ],
+  "gates": {
+    "clean_false_positive_rate_at_most_10_percent": true,
+    "critical_fault_recall_100_percent": true,
+    "expected_and_observed_primary_recorded": true,
+    "fresh_process_byte_reproducible": true,
+    "macro_recall_at_least_90_percent": true,
+    "raw_synthetic_text_absent": true
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "canonical_payload_sha256": "eb55eaa16a492881ff1bcec8812b2ef37bb2ed6055b6b90a1da408386f632e3a"
+  },
+  "per_fault": [
+    {
+      "case_count": 30,
+      "detected_count": 30,
+      "expected_signal": "invalid_role",
+      "fault_id": "schema.invalid_role",
+      "recall": 1.0,
+      "severity": "error"
+    },
+    {
+      "case_count": 30,
+      "detected_count": 30,
+      "expected_signal": "role_order",
+      "fault_id": "schema.role_order",
+      "recall": 1.0,
+      "severity": "error"
+    },
+    {
+      "case_count": 30,
+      "detected_count": 30,
+      "expected_signal": "missing_eos",
+      "fault_id": "template.missing_eos",
+      "recall": 1.0,
+      "severity": "error"
+    },
+    {
+      "case_count": 30,
+      "detected_count": 30,
+      "expected_signal": "prompt_token_supervised",
+      "fault_id": "mask.prompt_supervised",
+      "recall": 1.0,
+      "severity": "critical"
+    },
+    {
+      "case_count": 30,
+      "detected_count": 30,
+      "expected_signal": "assistant_fully_truncated",
+      "fault_id": "truncation.answer_removed",
+      "recall": 1.0,
+      "severity": "critical"
+    },
+    {
+      "case_count": 30,
+      "detected_count": 30,
+      "expected_signal": "exact_duplicate",
+      "fault_id": "data.exact_duplicate",
+      "recall": 1.0,
+      "severity": "warning"
+    },
+    {
+      "case_count": 30,
+      "detected_count": 30,
+      "expected_signal": "prompt_conflict",
+      "fault_id": "data.prompt_conflict",
+      "recall": 1.0,
+      "severity": "error"
+    },
+    {
+      "case_count": 30,
+      "detected_count": 30,
+      "expected_signal": "train_eval_leakage",
+      "fault_id": "data.train_eval_leakage",
+      "recall": 1.0,
+      "severity": "critical"
+    },
+    {
+      "case_count": 30,
+      "detected_count": 30,
+      "expected_signal": "secret_pattern",
+      "fault_id": "privacy.secret_pattern",
+      "recall": 1.0,
+      "severity": "critical"
+    }
+  ],
+  "protocol": {
+    "audit_config": {
+      "max_file_bytes": 16777216,
+      "max_line_bytes": 1048576,
+      "max_records": 100000,
+      "require_assistant_mask": true,
+      "scan_privacy": true
+    },
+    "faults": [
+      {
+        "expected_signal": "invalid_role",
+        "fault_id": "schema.invalid_role",
+        "severity": "error"
+      },
+      {
+        "expected_signal": "role_order",
+        "fault_id": "schema.role_order",
+        "severity": "error"
+      },
+      {
+        "expected_signal": "missing_eos",
+        "fault_id": "template.missing_eos",
+        "severity": "error"
+      },
+      {
+        "expected_signal": "prompt_token_supervised",
+        "fault_id": "mask.prompt_supervised",
+        "severity": "critical"
+      },
+      {
+        "expected_signal": "assistant_fully_truncated",
+        "fault_id": "truncation.answer_removed",
+        "severity": "critical"
+      },
+      {
+        "expected_signal": "exact_duplicate",
+        "fault_id": "data.exact_duplicate",
+        "severity": "warning"
+      },
+      {
+        "expected_signal": "prompt_conflict",
+        "fault_id": "data.prompt_conflict",
+        "severity": "error"
+      },
+      {
+        "expected_signal": "train_eval_leakage",
+        "fault_id": "data.train_eval_leakage",
+        "severity": "critical"
+      },
+      {
+        "expected_signal": "secret_pattern",
+        "fault_id": "privacy.secret_pattern",
+        "severity": "critical"
+      }
+    ],
+    "seed_range": {
+      "count": 30,
+      "first": 4100,
+      "last": 4129
+    }
+  },
+  "provenance": {
+    "implementation_git_commit": "b0f168ab4d6a959d4e28611e345a250c14ca2ea9",
+    "protocol_git_commit": "d4c74cefca6729124142635dc8893b5e3ddec2d3",
+    "python_implementation": "CPython",
+    "python_version": "3.11"
+  },
+  "schema_version": "sftguard.confirmatory-fault-matrix.v1",
+  "status": "PASS",
+  "summary": {
+    "case_count": 300,
+    "clean_control_count": 30,
+    "clean_false_positive_count": 0,
+    "clean_false_positive_rate": 0.0,
+    "fault_case_count": 270,
+    "macro_recall": 1.0
+  },
+  "tool": {
+    "name": "sftguard",
+    "version": "0.1.0"
+  }
+}

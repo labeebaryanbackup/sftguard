@@ -1,0 +1,6 @@
+{"seed":0,"sample_id":"target-0","group":"target","metric":"task_score","value":0.50}
+{"seed":0,"sample_id":"retention-0","group":"retention","metric":"general_score","value":0.80}
+{"seed":1,"sample_id":"target-1","group":"target","metric":"task_score","value":0.52}
+{"seed":1,"sample_id":"retention-1","group":"retention","metric":"general_score","value":0.79}
+{"seed":2,"sample_id":"target-2","group":"target","metric":"task_score","value":0.51}
+{"seed":2,"sample_id":"retention-2","group":"retention","metric":"general_score","value":0.81}

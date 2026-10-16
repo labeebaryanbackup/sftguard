@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "sftguard.report.v1",
+  "reportType": "audit",
+  "reportId": "sample-audit-mask-abstention",
+  "title": "Training data and mask audit",
+  "generatedAt": "2026-07-19T09:30:00.000Z",
+  "status": "ABSTAIN",
+  "summary": "Structural checks completed, but the tokenizer could not expose a trustworthy assistant-token mask. Release approval is withheld.",
+  "audit": {
+    "recordsScanned": 1280,
+    "checksPassed": 7,
+    "checksTotal": 8,
+    "supervisedTokens": null
+  },
+  "issues": [
+    {
+      "id": "template.mask_unavailable",
+      "category": "Template & mask",
+      "severity": "error",
+      "outcome": "ABSTAIN",
+      "count": 1,
+      "title": "Assistant-token mask unavailable",
+      "detail": "The selected tokenizer template did not expose a verifiable assistant-token mask. SFTGuard did not infer one."
+    },
+    {
+      "id": "data.exact_duplicate",
+      "category": "Data integrity",
+      "severity": "warning",
+      "outcome": "FAIL",
+      "count": 3,
+      "title": "Exact duplicate records",
+      "detail": "Three content hashes occurred more than once. Report data contains counts and hashes only."
+    }
+  ],
+  "provenance": {
+    "toolVersion": "0.1.0-sample",
+    "protocolCommit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "implementationCommit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "inputSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "artifactSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+    "runtime": "Python 3.12 · local illustrative fixture",
+    "deterministicReplay": true
+  },
+  "boundaries": {
+    "claim": [
+      "Illustrative UI fixture, not checked confirmatory evidence.",
+      "An abstention means the evidence contract was incomplete; it is not a pass."
+    ],
+    "privacy": [
+      "No prompts, responses, model weights, or detected secret values are included.",
+      "Counts and content-addressed identifiers are illustrative placeholders."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "sftguard.report.v1",
+  "reportType": "regression",
+  "reportId": "sample-regression-card-pass",
+  "title": "Adapter release regression card",
+  "generatedAt": "2026-07-19T09:45:00.000Z",
+  "status": "PASS",
+  "summary": "The adapter cleared the declared target gain and stayed inside the retention regression budget for this supplied evaluation contract.",
+  "regression": {
+    "target": {
+      "label": "Domain task accuracy",
+      "baseScore": 61.2,
+      "adapterScore": 73.6,
+      "deltaPercentagePoints": 12.4,
+      "minimumGainPercentagePoints": 5
+    },
+    "retention": {
+      "label": "General capability score",
+      "baseScore": 78.8,
+      "adapterScore": 78.2,
+      "deltaPercentagePoints": -0.6,
+      "maximumRegressionPercentagePoints": 2
+    }
+  },
+  "issues": [
+    {
+      "id": "regression.target_gain",
+      "category": "Target behavior",
+      "severity": "info",
+      "outcome": "PASS",
+      "count": 1,
+      "title": "Target gain cleared",
+      "detail": "Observed +12.4 percentage points against a preregistered +5.0 point minimum."
+    },
+    {
+      "id": "regression.retention_budget",
+      "category": "Retention",
+      "severity": "info",
+      "outcome": "PASS",
+      "count": 1,
+      "title": "Retention stayed in budget",
+      "detail": "Observed −0.6 percentage points against a maximum permitted regression of −2.0 points."
+    }
+  ],
+  "provenance": {
+    "toolVersion": "0.1.0-sample",
+    "protocolCommit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "implementationCommit": "cccccccccccccccccccccccccccccccccccccccc",
+    "inputSha256": "3333333333333333333333333333333333333333333333333333333333333333",
+    "artifactSha256": "4444444444444444444444444444444444444444444444444444444444444444",
+    "runtime": "Python 3.12 · local illustrative fixture",
+    "deterministicReplay": true
+  },
+  "boundaries": {
+    "claim": [
+      "Illustrative UI fixture, not a measured adapter result.",
+      "A pass applies only to the supplied target and retention evaluation records."
+    ],
+    "privacy": [
+      "No evaluation examples or model outputs are embedded.",
+      "The report contains only aggregate scores and placeholder hashes."
+    ]
+  }
+}

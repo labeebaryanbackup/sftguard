@@ -1,0 +1,67 @@
+name: Bug report
+description: Report a reproducible problem using synthetic or sanitized data.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach private datasets, prompts, responses, credentials, model weights, or unsanitized Regression Cards. Use [private vulnerability reporting](https://github.com/Labeeb2339/sftguard/security/advisories/new) for a security or privacy failure.
+  - type: input
+    id: version
+    attributes:
+      label: SFTGuard version or commit
+      placeholder: 0.1.0 or a full Git commit
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Python CLI or library
+        - Dataset audit
+        - Tokenizer or loss mask
+        - Regression Card or gate
+        - Static report viewer
+        - CI or packaging
+        - Documentation
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Sanitized environment
+      description: Operating system, Python or Node version, and relevant package versions. Remove usernames and private paths.
+      placeholder: Windows 11, Python 3.12.4
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use the smallest synthetic fixture that demonstrates the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Quote only sanitized output; do not paste a real record or secret candidate.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I used synthetic or sanitized data and removed credentials, raw records, local usernames, and private paths.
+          required: true
+        - label: This report is not a vulnerability or private-data exposure that should be submitted privately.
+          required: true

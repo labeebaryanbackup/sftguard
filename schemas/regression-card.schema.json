@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sftguard:schema:regression-card:v1",
+  "title": "SFTGuard Regression Card",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "tool",
+    "status",
+    "inputs",
+    "metrics",
+    "summary",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {"const": "sftguard.regression-card.v1"},
+    "status": {"enum": ["PASS", "FAIL", "ABSTAIN"]},
+    "inputs": {"type": "array"},
+    "bootstrap": {"type": "object"},
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "group",
+          "metric",
+          "status",
+          "pair_count",
+          "mean_normalized_improvement",
+          "confidence_interval",
+          "threshold",
+          "decision_rule"
+        ],
+        "properties": {
+          "group": {"enum": ["target", "retention"]},
+          "metric": {"type": "string"},
+          "status": {"enum": ["PASS", "FAIL"]}
+        }
+      }
+    },
+    "summary": {"type": "object"},
+    "integrity": {
+      "type": "object",
+      "required": ["algorithm", "canonical_payload_sha256"]
+    }
+  }
+}

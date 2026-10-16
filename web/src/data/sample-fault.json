@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "sftguard.report.v1",
+  "reportType": "fault-matrix",
+  "reportId": "sample-fault-matrix-fail",
+  "title": "Synthetic fault-injection matrix",
+  "generatedAt": "2026-07-19T10:00:00.000Z",
+  "status": "FAIL",
+  "summary": "Eight of nine illustrative fault classes were detected. The macro-recall gate failed, so carry-forward remains blocked.",
+  "faultCoverage": {
+    "expectedFaultClasses": 9,
+    "detectedFaultClasses": 8,
+    "criticalRecallPercent": 100,
+    "macroRecallPercent": 88.9,
+    "cleanFalsePositiveRatePercent": 6.7,
+    "carryForward": false
+  },
+  "issues": [
+    {
+      "id": "data.exact_duplicate",
+      "category": "Data integrity",
+      "severity": "warning",
+      "outcome": "FAIL",
+      "count": 1,
+      "title": "Duplicate fault missed",
+      "detail": "The illustrative exact-duplicate case did not emit its required primary signal."
+    },
+    {
+      "id": "gate.macro_recall",
+      "category": "Fault coverage",
+      "severity": "error",
+      "outcome": "FAIL",
+      "count": 1,
+      "title": "Macro recall below gate",
+      "detail": "Observed 88.9% against the frozen 90% minimum."
+    },
+    {
+      "id": "gate.critical_recall",
+      "category": "Fault coverage",
+      "severity": "info",
+      "outcome": "PASS",
+      "count": 1,
+      "title": "Critical recall met",
+      "detail": "All illustrative critical fault classes emitted their expected primary signal."
+    }
+  ],
+  "provenance": {
+    "toolVersion": "0.1.0-sample",
+    "protocolCommit": "dddddddddddddddddddddddddddddddddddddddd",
+    "implementationCommit": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "inputSha256": "5555555555555555555555555555555555555555555555555555555555555555",
+    "artifactSha256": "6666666666666666666666666666666666666666666666666666666666666666",
+    "runtime": "Python 3.12 · local illustrative fixture",
+    "deterministicReplay": false
+  },
+  "boundaries": {
+    "claim": [
+      "Illustrative UI fixture; confirmatory seeds have not been represented here.",
+      "Synthetic fault detection does not establish coverage of unknown real-world failures."
+    ],
+    "privacy": [
+      "Injected strings and raw records are intentionally omitted.",
+      "Only expected and observed aggregate signals would appear in a real artifact."
+    ]
+  }
+}

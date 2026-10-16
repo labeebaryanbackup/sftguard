@@ -1,0 +1,14 @@
+{
+  "capture": "docs/assets/sftguard-confirmatory-dashboard.png",
+  "capture_sha256": "32c505508b7ebe89852593eff9a27ab0f94fa11008842b446ddc400db8fba0ac",
+  "network_boundary": "loopback-only static build",
+  "schema_version": "sftguard.readme-capture.v1",
+  "source_artifact": "evidence/v0.1.0-confirmatory.json",
+  "source_artifact_sha256": "961b2842d7791f6f3af7bec5bce6105e433b68d41bf6f7b82a9f3a98e1f695ab",
+  "viewer_fixture": "default checked-in confirmatory evidence",
+  "viewport": {
+    "device_scale_factor": 1,
+    "height": 900,
+    "width": 1440
+  }
+}
